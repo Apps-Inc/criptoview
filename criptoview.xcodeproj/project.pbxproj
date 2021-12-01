@@ -14,12 +14,12 @@
 		0E5169C22756A0F80086CECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169C12756A0F80086CECF /* ViewController.swift */; };
 		0E5169C72756A0F90086CECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5169C62756A0F90086CECF /* Assets.xcassets */; };
 		0E5169CA2756A0F90086CECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5169C82756A0F90086CECF /* LaunchScreen.storyboard */; };
-		0E5169D52756A0F90086CECF /* criptoviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169D42756A0F90086CECF /* criptoviewTests.swift */; };
-		0E5169DF2756A0F90086CECF /* criptoviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169DE2756A0F90086CECF /* criptoviewUITests.swift */; };
-		0E5169E12756A0F90086CECF /* criptoviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169E02756A0F90086CECF /* criptoviewUITestsLaunchTests.swift */; };
+		0E5169D52756A0F90086CECF /* CriptoviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169D42756A0F90086CECF /* CriptoviewTests.swift */; };
+		0E5169DF2756A0F90086CECF /* CriptoviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169DE2756A0F90086CECF /* CriptoviewUITests.swift */; };
+		0E5169E12756A0F90086CECF /* CriptoviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169E02756A0F90086CECF /* CriptoviewUITestsLaunchTests.swift */; };
 		0E97A19E2757C8D700C1589C /* Sparkline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97A19D2757C8D700C1589C /* Sparkline.swift */; };
 		0E97A1A12757C92900C1589C /* SparklineReturnDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97A1A02757C92900C1589C /* SparklineReturnDto.swift */; };
-		0E97A1A42757CB3900C1589C /* apiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97A1A32757CB3900C1589C /* apiTests.swift */; };
+		0E97A1A42757CB3900C1589C /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97A1A32757CB3900C1589C /* ApiTests.swift */; };
 		0E97A1A62757EF7400C1589C /* TickerReturnDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97A1A52757EF7400C1589C /* TickerReturnDto.swift */; };
 		0E97A1A82757F6FA00C1589C /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97A1A72757F6FA00C1589C /* Ticker.swift */; };
 		CA64F5E76F957B4E5FC6E5CE /* CriptoCoinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C0895CE5FFACBD98B3971F /* CriptoCoinCollectionViewCell.swift */; };
@@ -54,13 +54,13 @@
 		0E5169C92756A0F90086CECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E5169CB2756A0F90086CECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E5169D02756A0F90086CECF /* criptoviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = criptoviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E5169D42756A0F90086CECF /* criptoviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = criptoviewTests.swift; sourceTree = "<group>"; };
+		0E5169D42756A0F90086CECF /* CriptoviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoviewTests.swift; sourceTree = "<group>"; };
 		0E5169DA2756A0F90086CECF /* criptoviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = criptoviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E5169DE2756A0F90086CECF /* criptoviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = criptoviewUITests.swift; sourceTree = "<group>"; };
-		0E5169E02756A0F90086CECF /* criptoviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = criptoviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E5169DE2756A0F90086CECF /* CriptoviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoviewUITests.swift; sourceTree = "<group>"; };
+		0E5169E02756A0F90086CECF /* CriptoviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0E97A19D2757C8D700C1589C /* Sparkline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparkline.swift; sourceTree = "<group>"; };
 		0E97A1A02757C92900C1589C /* SparklineReturnDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparklineReturnDto.swift; sourceTree = "<group>"; };
-		0E97A1A32757CB3900C1589C /* apiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiTests.swift; sourceTree = "<group>"; };
+		0E97A1A32757CB3900C1589C /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
 		0E97A1A52757EF7400C1589C /* TickerReturnDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerReturnDto.swift; sourceTree = "<group>"; };
 		0E97A1A72757F6FA00C1589C /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		9A25DE25F559183083CAD73A /* ViewControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUI.swift; sourceTree = "<group>"; };
@@ -156,8 +156,8 @@
 		0E5169D32756A0F90086CECF /* criptoviewTests */ = {
 			isa = PBXGroup;
 			children = (
-				0E5169D42756A0F90086CECF /* criptoviewTests.swift */,
-				0E97A1A32757CB3900C1589C /* apiTests.swift */,
+				0E5169D42756A0F90086CECF /* CriptoviewTests.swift */,
+				0E97A1A32757CB3900C1589C /* ApiTests.swift */,
 			);
 			path = criptoviewTests;
 			sourceTree = "<group>";
@@ -165,8 +165,8 @@
 		0E5169DD2756A0F90086CECF /* criptoviewUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0E5169DE2756A0F90086CECF /* criptoviewUITests.swift */,
-				0E5169E02756A0F90086CECF /* criptoviewUITestsLaunchTests.swift */,
+				0E5169DE2756A0F90086CECF /* CriptoviewUITests.swift */,
+				0E5169E02756A0F90086CECF /* CriptoviewUITestsLaunchTests.swift */,
 			);
 			path = criptoviewUITests;
 			sourceTree = "<group>";
@@ -225,6 +225,7 @@
 			buildConfigurationList = 0E5169E42756A0F90086CECF /* Build configuration list for PBXNativeTarget "criptoview" */;
 			buildPhases = (
 				0E5169B62756A0F80086CECF /* Sources */,
+				0E3C9009275814AF00512F41 /* ShellScript */,
 				0E5169B72756A0F80086CECF /* Frameworks */,
 				0E5169B82756A0F80086CECF /* Resources */,
 			);
@@ -342,6 +343,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E3C9009275814AF00512F41 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint='/opt/homebrew/bin/swiftlint'\n\nif which $swiftlint >/dev/null; then\n    $swiftlint autocorrect && $swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0E5169B62756A0F80086CECF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -365,8 +386,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E97A1A42757CB3900C1589C /* apiTests.swift in Sources */,
-				0E5169D52756A0F90086CECF /* criptoviewTests.swift in Sources */,
+				0E97A1A42757CB3900C1589C /* ApiTests.swift in Sources */,
+				0E5169D52756A0F90086CECF /* CriptoviewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,8 +395,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5169E12756A0F90086CECF /* criptoviewUITestsLaunchTests.swift in Sources */,
-				0E5169DF2756A0F90086CECF /* criptoviewUITests.swift in Sources */,
+				0E5169E12756A0F90086CECF /* CriptoviewUITestsLaunchTests.swift in Sources */,
+				0E5169DF2756A0F90086CECF /* CriptoviewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

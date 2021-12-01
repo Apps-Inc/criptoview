@@ -1,6 +1,6 @@
 import XCTest
 
-class criptoviewUITestsLaunchTests: XCTestCase {
+class CriptoviewUITestsLaunchTests: XCTestCase {
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
