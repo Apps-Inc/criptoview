@@ -17,6 +17,10 @@
 		0E5169D52756A0F90086CECF /* criptoviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169D42756A0F90086CECF /* criptoviewTests.swift */; };
 		0E5169DF2756A0F90086CECF /* criptoviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169DE2756A0F90086CECF /* criptoviewUITests.swift */; };
 		0E5169E12756A0F90086CECF /* criptoviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169E02756A0F90086CECF /* criptoviewUITestsLaunchTests.swift */; };
+		4CB1557A2757EFC0006A4D0F /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 4CB155792757EFC0006A4D0F /* Charts */; };
+		4CB1557C2757F091006A4D0F /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1557B2757F091006A4D0F /* ChartViewController.swift */; };
+		4CB1557E2757F3A3006A4D0F /* ChartViewControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1557D2757F3A3006A4D0F /* ChartViewControllerUI.swift */; };
+		4CB155812757F68A006A4D0F /* Sparkline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB155802757F68A006A4D0F /* Sparkline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,9 @@
 		0E5169DA2756A0F90086CECF /* criptoviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = criptoviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5169DE2756A0F90086CECF /* criptoviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = criptoviewUITests.swift; sourceTree = "<group>"; };
 		0E5169E02756A0F90086CECF /* criptoviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = criptoviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CB1557B2757F091006A4D0F /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		4CB1557D2757F3A3006A4D0F /* ChartViewControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewControllerUI.swift; sourceTree = "<group>"; };
+		4CB155802757F68A006A4D0F /* Sparkline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparkline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB1557A2757EFC0006A4D0F /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,7 @@
 		00B877872757B4F300F91872 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4CB1557B2757F091006A4D0F /* ChartViewController.swift */,
 				0E5169C12756A0F80086CECF /* ViewController.swift */,
 			);
 			path = Controller;
@@ -91,6 +100,7 @@
 			children = (
 				00B8778B2757B89900F91872 /* Components */,
 				00B877892757B57100F91872 /* ViewControllerUI.swift */,
+				4CB1557D2757F3A3006A4D0F /* ChartViewControllerUI.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,6 +116,7 @@
 		0E1EC8722756A17B00D0AF28 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				4CB1557F2757F66A006A4D0F /* Models */,
 				0E5169BD2756A0F80086CECF /* AppDelegate.swift */,
 				0E5169BF2756A0F80086CECF /* SceneDelegate.swift */,
 				00B877882757B54300F91872 /* View */,
@@ -162,6 +173,14 @@
 			path = criptoviewUITests;
 			sourceTree = "<group>";
 		};
+		4CB1557F2757F66A006A4D0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CB155802757F68A006A4D0F /* Sparkline.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +197,9 @@
 			dependencies = (
 			);
 			name = criptoview;
+			packageProductDependencies = (
+				4CB155792757EFC0006A4D0F /* Charts */,
+			);
 			productName = criptoview;
 			productReference = 0E5169BA2756A0F80086CECF /* criptoview.app */;
 			productType = "com.apple.product-type.application";
@@ -250,6 +272,9 @@
 				Base,
 			);
 			mainGroup = 0E5169B12756A0F80086CECF;
+			packageReferences = (
+				4CB155782757EFC0006A4D0F /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 0E5169BB2756A0F80086CECF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -295,8 +320,11 @@
 				0E5169C22756A0F80086CECF /* ViewController.swift in Sources */,
 				00B8778D2757B92B00F91872 /* CriptoCoinCollectionViewCell.swift in Sources */,
 				0E5169BE2756A0F80086CECF /* AppDelegate.swift in Sources */,
+				4CB155812757F68A006A4D0F /* Sparkline.swift in Sources */,
 				00B8778A2757B57100F91872 /* ViewControllerUI.swift in Sources */,
 				0E5169C02756A0F80086CECF /* SceneDelegate.swift in Sources */,
+				4CB1557C2757F091006A4D0F /* ChartViewController.swift in Sources */,
+				4CB1557E2757F3A3006A4D0F /* ChartViewControllerUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +672,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4CB155782757EFC0006A4D0F /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4CB155792757EFC0006A4D0F /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CB155782757EFC0006A4D0F /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E5169B22756A0F80086CECF /* Project object */;
 }
