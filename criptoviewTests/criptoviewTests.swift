@@ -1,15 +1,8 @@
-//
-//  criptoviewTests.swift
-//  criptoviewTests
-//
-//  Created by ANIBAL GABRIEL MARTINS VILELA on 30/11/21.
-//
-
-import XCTest
 @testable import criptoview
 
-class criptoviewTests: XCTestCase {
+import XCTest
 
+class criptoviewTests: XCTestCase {
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -29,5 +22,4 @@ class criptoviewTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }
