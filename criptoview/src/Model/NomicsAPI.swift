@@ -3,6 +3,8 @@ import Foundation
 struct NomicsAPI {
     let key: String
 
+    let baseUrl = "https://api.nomics.com/v1/currencies/"
+
     init(key: String) {
         self.key = key
     }
@@ -30,19 +32,30 @@ struct NomicsAPI {
 
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(type, from: responseData) else {
+            print("Error decoding JSON for type \(type)")
+
+            print("- responseData: \(responseData)")
+
+            let data = String(data: responseData, encoding: .utf8) ?? "no data"
+            print("- data: \(data)")
+
             return nil
         }
 
         return decodedData
     }
+}
 
+// MARK: GET /sparkline
+
+extension NomicsAPI {
     private func sparklineEndpoint(coins: [CriptoCoin]) -> String {
-        let baseUrl = "https://api.nomics.com/v1/currencies/"
         let sparklineEndpointTemplate = "sparkline?" +
             "key=%@&" +
             "ids=%@&" +
             "start=2021-10-30T00%%3A00%%3A00Z&" +
-            "end=2021-11-03T00%%3A00%%3A00Z"
+            "end=2021-11-03T00%%3A00%%3A00Z&" +
+            "convert=BRL&"
 
         let coins = coins.map { String(describing: $0) }.joined(separator: ",")
 
@@ -82,5 +95,49 @@ struct NomicsAPI {
 
     func sparklineAll() -> [CriptoCoin: Sparkline]? {
         return sparkline(for: CriptoCoin.allCases)
+    }
+}
+
+// MARK: GET /ticker
+
+extension NomicsAPI {
+    private func tickerEndpoint(coins: [CriptoCoin]) -> String {
+        let tickerEndpointTemplate = "ticker?" +
+            "key=%@&" +
+            "ids=%@&" +
+            "interval=1d&" +
+            "convert=BRL&" +
+            "per-page=%d&" +
+            "page=1&"
+
+        return baseUrl + String(
+            format: tickerEndpointTemplate,
+            self.key,
+            coins.map { String(describing: $0) }.joined(separator: ","),
+            coins.count
+        )
+    }
+
+    func ticker(for coins: [CriptoCoin]) -> [CriptoCoin: Ticker]? {
+        let endpoint = tickerEndpoint(coins: coins)
+
+        guard let url = URL(string: endpoint),
+              let dtos = get(as: [TickerReturnDto].self, from: url)
+        else {
+            return nil
+        }
+
+        var dataset = [CriptoCoin: Ticker]()
+
+        for tickerDto in dtos {
+            guard let coin = CriptoCoin.withLabel(tickerDto.symbol) else { continue }
+            dataset[coin] = Ticker(dto: tickerDto)
+        }
+
+        return dataset
+    }
+
+    func tickerAll() -> [CriptoCoin: Ticker]? {
+        return ticker(for: CriptoCoin.allCases)
     }
 }

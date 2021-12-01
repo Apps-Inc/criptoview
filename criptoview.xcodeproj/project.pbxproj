@@ -20,6 +20,8 @@
 		0E97A19E2757C8D700C1589C /* Sparkline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97A19D2757C8D700C1589C /* Sparkline.swift */; };
 		0E97A1A12757C92900C1589C /* SparklineReturnDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97A1A02757C92900C1589C /* SparklineReturnDto.swift */; };
 		0E97A1A42757CB3900C1589C /* apiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97A1A32757CB3900C1589C /* apiTests.swift */; };
+		0E97A1A62757EF7400C1589C /* TickerReturnDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97A1A52757EF7400C1589C /* TickerReturnDto.swift */; };
+		0E97A1A82757F6FA00C1589C /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97A1A72757F6FA00C1589C /* Ticker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		0E97A19D2757C8D700C1589C /* Sparkline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparkline.swift; sourceTree = "<group>"; };
 		0E97A1A02757C92900C1589C /* SparklineReturnDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparklineReturnDto.swift; sourceTree = "<group>"; };
 		0E97A1A32757CB3900C1589C /* apiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiTests.swift; sourceTree = "<group>"; };
+		0E97A1A52757EF7400C1589C /* TickerReturnDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerReturnDto.swift; sourceTree = "<group>"; };
+		0E97A1A72757F6FA00C1589C /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 				0E97A1A22757C94A00C1589C /* DTO */,
 				0E1EC8782756B1F100D0AF28 /* CriptoCoin.swift */,
 				0E1EC8762756AE9900D0AF28 /* NomicsAPI.swift */,
+				0E97A1A72757F6FA00C1589C /* Ticker.swift */,
 				0E97A19D2757C8D700C1589C /* Sparkline.swift */,
 			);
 			path = Model;
@@ -175,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				0E97A1A02757C92900C1589C /* SparklineReturnDto.swift */,
+				0E97A1A52757EF7400C1589C /* TickerReturnDto.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -310,8 +316,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E97A1A12757C92900C1589C /* SparklineReturnDto.swift in Sources */,
+				0E97A1A62757EF7400C1589C /* TickerReturnDto.swift in Sources */,
 				0E5169C22756A0F80086CECF /* ViewController.swift in Sources */,
 				0E97A19E2757C8D700C1589C /* Sparkline.swift in Sources */,
+				0E97A1A82757F6FA00C1589C /* Ticker.swift in Sources */,
 				0E1EC8792756B1F100D0AF28 /* CriptoCoin.swift in Sources */,
 				0E1EC8772756AE9900D0AF28 /* NomicsAPI.swift in Sources */,
 				0E5169BE2756A0F80086CECF /* AppDelegate.swift in Sources */,
