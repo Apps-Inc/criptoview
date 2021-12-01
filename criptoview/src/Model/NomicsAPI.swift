@@ -20,6 +20,7 @@ struct NomicsAPI {
 
             if err != nil {
                 print("Error: \(err.debugDescription)")
+                return
             }
 
             responseData = data!
