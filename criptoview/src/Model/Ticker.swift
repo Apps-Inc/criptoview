@@ -7,7 +7,7 @@ struct Ticker {
     let price: Float
 
     init?(dto: TickerReturnDto) {
-        guard let logoUrl = URL(string: dto.logo_url),
+        guard let logoUrl = URL(string: dto.logoUrl),
               let rank = Int(dto.rank),
               let price = Float(dto.price)
         else {

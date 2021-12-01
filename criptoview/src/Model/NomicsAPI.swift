@@ -31,6 +31,8 @@ struct NomicsAPI {
         sem.wait()
 
         let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+
         guard let decodedData = try? decoder.decode(type, from: responseData) else {
             print("Error decoding JSON for type \(type)")
 

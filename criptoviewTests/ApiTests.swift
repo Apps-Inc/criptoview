@@ -2,7 +2,7 @@
 
 import XCTest
 
-class apiTests: XCTestCase {
+class ApiTests: XCTestCase {
     var api: NomicsAPI!
 
     override func setUp() {
