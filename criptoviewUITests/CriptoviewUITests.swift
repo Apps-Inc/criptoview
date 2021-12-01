@@ -1,6 +1,6 @@
 import XCTest
 
-class criptoviewUITests: XCTestCase {
+class CriptoviewUITests: XCTestCase {
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
