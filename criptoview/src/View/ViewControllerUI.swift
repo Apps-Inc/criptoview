@@ -11,6 +11,7 @@ import UIKit
 extension ViewController {
     func buildScreen() {
         title = "Cripto Coins"
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 3
@@ -23,7 +24,7 @@ extension ViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.backgroundColor = .green
+        collectionView.backgroundColor = .clear
         view.addSubview(collectionView)
         
         NSLayoutConstraint.activate([
