@@ -58,7 +58,6 @@ extension ViewController: UICollectionViewDataSource {
         if let image = UIImage(named: coin.rawValue) {
             cell.configureCell(backgroundImage: image)
         }
-//        cell.backgroundColor = .red
         return cell
     }
 }
@@ -66,6 +65,11 @@ extension ViewController: UICollectionViewDataSource {
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let chart = ChartViewController()
+
+        let coin = CriptoCoin.allCases[indexPath.row]
+        chart.coin = coin
+        chart.ticker = tickers[coin]
+
         present(chart, animated: true)
     }
 }
