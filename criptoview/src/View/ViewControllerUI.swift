@@ -62,6 +62,7 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // TODO: fazer clique
+        let chart = ChartViewController()
+        present(chart, animated: true)
     }
 }
