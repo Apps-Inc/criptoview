@@ -51,25 +51,24 @@ struct NomicsAPI {
 // MARK: GET /sparkline
 
 extension NomicsAPI {
-    private func sparklineEndpoint(coins: [CriptoCoin]) -> String {
+    private func sparklineEndpoint(coins: [CriptoCoin], convert toStandardCoin: RealCoin) -> String {
         let sparklineEndpointTemplate = "sparkline?" +
             "key=%@&" +
             "ids=%@&" +
             "start=2021-10-30T00%%3A00%%3A00Z&" +
             "end=2021-11-03T00%%3A00%%3A00Z&" +
-            "convert=BRL&"
-
-        let coins = coins.map { String(describing: $0) }.joined(separator: ",")
+            "convert=%@&"
 
         return baseUrl + String(
             format: sparklineEndpointTemplate,
             self.key,
-            coins
+            coins.map(\.symbol).joined(separator: ","),
+            toStandardCoin.symbol
         )
     }
 
-    func sparkline(for coin: CriptoCoin) -> Sparkline? {
-        let endpoint = sparklineEndpoint(coins: [coin])
+    func sparkline(for coin: CriptoCoin, convert toStandardCoin: RealCoin) -> Sparkline? {
+        let endpoint = sparklineEndpoint(coins: [coin], convert: toStandardCoin)
         guard let url = URL(string: endpoint) else { return nil }
 
         let sparklineDto = get(as: [SparklineReturnDto].self, from: url)
@@ -78,8 +77,8 @@ extension NomicsAPI {
         return sparklineDto!.map { Sparkline(dto: $0) }[0]
     }
 
-    func sparkline(for coins: [CriptoCoin]) -> [CriptoCoin: Sparkline]? {
-        let endpoint = sparklineEndpoint(coins: coins)
+    func sparkline(for coins: [CriptoCoin], convert toStandardCoin: RealCoin) -> [CriptoCoin: Sparkline]? {
+        let endpoint = sparklineEndpoint(coins: coins, convert: toStandardCoin)
         guard let url = URL(string: endpoint) else { return nil }
 
         let sparklineDto = get(as: [SparklineReturnDto].self, from: url)
@@ -95,33 +94,34 @@ extension NomicsAPI {
         return dataset
     }
 
-    func sparklineAll() -> [CriptoCoin: Sparkline]? {
-        return sparkline(for: CriptoCoin.allCases)
+    func sparklineAll(convert toStandardCoin: RealCoin) -> [CriptoCoin: Sparkline]? {
+        return sparkline(for: CriptoCoin.allCases, convert: toStandardCoin)
     }
 }
 
 // MARK: GET /ticker
 
 extension NomicsAPI {
-    private func tickerEndpoint(coins: [CriptoCoin]) -> String {
+    private func tickerEndpoint(coins: [CriptoCoin], convert toStandardCoin: RealCoin) -> String {
         let tickerEndpointTemplate = "ticker?" +
             "key=%@&" +
             "ids=%@&" +
             "interval=1d&" +
-            "convert=BRL&" +
+            "convert=%@&" +
             "per-page=%d&" +
             "page=1&"
 
         return baseUrl + String(
             format: tickerEndpointTemplate,
             self.key,
-            coins.map { String(describing: $0) }.joined(separator: ","),
+            coins.map(\.symbol).joined(separator: ","),
+            toStandardCoin.symbol,
             coins.count
         )
     }
 
-    func ticker(for coins: [CriptoCoin]) -> [CriptoCoin: Ticker]? {
-        let endpoint = tickerEndpoint(coins: coins)
+    func ticker(for coins: [CriptoCoin], convert toStandardCoin: RealCoin) -> [CriptoCoin: Ticker]? {
+        let endpoint = tickerEndpoint(coins: coins, convert: toStandardCoin)
 
         guard let url = URL(string: endpoint),
               let dtos = get(as: [TickerReturnDto].self, from: url)
@@ -139,7 +139,7 @@ extension NomicsAPI {
         return dataset
     }
 
-    func tickerAll() -> [CriptoCoin: Ticker]? {
-        return ticker(for: CriptoCoin.allCases)
+    func tickerAll(convert toStandardCoin: RealCoin) -> [CriptoCoin: Ticker]? {
+        return ticker(for: CriptoCoin.allCases, convert: toStandardCoin)
     }
 }
