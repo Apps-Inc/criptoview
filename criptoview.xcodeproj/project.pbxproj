@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E018A4A2759057700CE9414 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E018A492759057700CE9414 /* Environment.swift */; };
-		0E1EC8772756AE9900D0AF28 /* NomicsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1EC8762756AE9900D0AF28 /* NomicsAPI.swift */; };
-		0E1EC8792756B1F100D0AF28 /* CriptoCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1EC8782756B1F100D0AF28 /* CriptoCoin.swift */; };
-		0E5169BE2756A0F80086CECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169BD2756A0F80086CECF /* AppDelegate.swift */; };
-		0E5169C02756A0F80086CECF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169BF2756A0F80086CECF /* SceneDelegate.swift */; };
 		00B8778A2757B57100F91872 /* ViewControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B877892757B57100F91872 /* ViewControllerUI.swift */; };
 		00B8778D2757B92B00F91872 /* CriptoCoinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B8778C2757B92B00F91872 /* CriptoCoinCollectionViewCell.swift */; };
 		0BF8030702C24BEDD360442B /* CriptoCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3BCDD1BC36EFF614124A6 /* CriptoCoin.swift */; };
+		0E018A4A2759057700CE9414 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E018A492759057700CE9414 /* Environment.swift */; };
 		0E5169C22756A0F80086CECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169C12756A0F80086CECF /* ViewController.swift */; };
 		0E5169C72756A0F90086CECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5169C62756A0F90086CECF /* Assets.xcassets */; };
 		0E5169CA2756A0F90086CECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5169C82756A0F90086CECF /* LaunchScreen.storyboard */; };
@@ -52,11 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E018A492759057700CE9414 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = criptoview/src/Environment.swift; sourceTree = SOURCE_ROOT; };
-		0E1EC8762756AE9900D0AF28 /* NomicsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomicsAPI.swift; sourceTree = "<group>"; };
-		0E1EC8782756B1F100D0AF28 /* CriptoCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCoin.swift; sourceTree = "<group>"; };
 		00B877892757B57100F91872 /* ViewControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUI.swift; sourceTree = "<group>"; };
 		00B8778C2757B92B00F91872 /* CriptoCoinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCoinCollectionViewCell.swift; sourceTree = "<group>"; };
+		0E018A492759057700CE9414 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = criptoview/src/Environment.swift; sourceTree = SOURCE_ROOT; };
 		0E5169BA2756A0F80086CECF /* criptoview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = criptoview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5169C12756A0F80086CECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E5169C62756A0F90086CECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +130,7 @@
 		0E1EC8722756A17B00D0AF28 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				0E018A492759057700CE9414 /* Environment.swift */,
 				00B877882757B54300F91872 /* View */,
 				00B877872757B4F300F91872 /* Controller */,
 				1CDE18E492CCF81D16AF0128 /* Delegates */,
@@ -178,9 +173,6 @@
 		0E5169D32756A0F90086CECF /* criptoviewTests */ = {
 			isa = PBXGroup;
 			children = (
-				0E5169D42756A0F90086CECF /* CriptoviewTests.swift */,
-				0E97A1A32757CB3900C1589C /* ApiTests.swift */,
-				0E018A492759057700CE9414 /* Environment.swift */,
 				8105AB2081B861EFB85CD282 /* CriptoviewTests.swift */,
 				B003DEF1749C6637F9A5139C /* ApiTests.swift */,
 			);
@@ -404,9 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E97A1A42757CB3900C1589C /* ApiTests.swift in Sources */,
 				0E018A4A2759057700CE9414 /* Environment.swift in Sources */,
-				0E5169D52756A0F90086CECF /* CriptoviewTests.swift in Sources */,
 				A35E27A0202E2CB56E8D1198 /* ApiTests.swift in Sources */,
 				764254055328F4785B24F06B /* CriptoviewTests.swift in Sources */,
 			);

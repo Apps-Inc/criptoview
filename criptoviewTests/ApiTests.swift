@@ -6,11 +6,7 @@ class ApiTests: XCTestCase {
     var api: NomicsAPI!
 
     override func setUp() {
-        // api = NomicsAPI(key: Environment.nomicsTestsApiKey)
-        print("getting api key")
-        let key = ProcessInfo.processInfo.environment["TESTS_NOMICS_API_KEY"]!
-        print("api key: \(key)")
-        api = NomicsAPI(key: key)
+        api = NomicsAPI(key: Environment.nomicsTestsApiKey)
     }
 
     override func setUpWithError() throws {
