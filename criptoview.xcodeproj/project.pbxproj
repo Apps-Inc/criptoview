@@ -103,8 +103,8 @@
 		00B877872757B4F300F91872 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4CB1557B2757F091006A4D0F /* ChartViewController.swift */,
 				0E5169C12756A0F80086CECF /* ViewController.swift */,
+				4CB1557B2757F091006A4D0F /* ChartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
