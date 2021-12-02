@@ -1,6 +1,9 @@
 import Foundation
 
 struct NomicsAPI {
+
+    static let api: NomicsAPI = NomicsAPI(key: "b91b2ed6c75004f22ab854565929e843b9b8ae38")
+
     let key: String
 
     let baseUrl = "https://api.nomics.com/v1/currencies/"
