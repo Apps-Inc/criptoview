@@ -26,6 +26,7 @@ jobs:
           platform: ${{ 'iOS Simulator' }}
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
+          sed -i '' 's/\$(TESTS_NOMICS_API_KEY)/${{ secrets.TESTS_NOMICS_API_KEY }}/' criptoview/src/Environment.swift
           device='iPhone 13'
           if [ $scheme = default ]; then scheme=$(cat default); fi
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
@@ -38,10 +39,8 @@ jobs:
         env:
           scheme: ${{ 'default' }}
           platform: ${{ 'iOS Simulator' }}
-          TESTS_NOMICS_API_KEY: ${{secrets.TESTS_NOMICS_API_KEY}}
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
-          sed -ie "s/\$(TESTS_NOMICS_API_KEY)/${TESTS_NOMICS_API_KEY}/" **/Environment.swift
           device='iPhone 13'
           if [ $scheme = default ]; then scheme=$(cat default); fi
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
