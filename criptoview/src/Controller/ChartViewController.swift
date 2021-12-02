@@ -9,14 +9,14 @@ import UIKit
 import Charts
 
 class ChartViewController: UIViewController {
-    
+
     var lineChart = LineChartView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         buildScreen()
     }
-    
+
     func update() {
         let entries = [
             ChartDataEntry(x: 1, y: 14),

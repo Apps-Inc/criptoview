@@ -13,6 +13,9 @@
 		0E5169C22756A0F80086CECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169C12756A0F80086CECF /* ViewController.swift */; };
 		0E5169C72756A0F90086CECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5169C62756A0F90086CECF /* Assets.xcassets */; };
 		0E5169CA2756A0F90086CECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5169C82756A0F90086CECF /* LaunchScreen.storyboard */; };
+		4C426E212758FB190042F544 /* Sparkline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C426E202758FB190042F544 /* Sparkline.swift */; };
+		4C426E222758FBFA0042F544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8137E8175CFBBA4DA6E20 /* AppDelegate.swift */; };
+		4C426E232758FBFE0042F544 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B2ADF830B5EDEB79DB3354 /* SceneDelegate.swift */; };
 		4CB1557A2757EFC0006A4D0F /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 4CB155792757EFC0006A4D0F /* Charts */; };
 		4CB1557C2757F091006A4D0F /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1557B2757F091006A4D0F /* ChartViewController.swift */; };
 		4CB1557E2757F3A3006A4D0F /* ChartViewControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1557D2757F3A3006A4D0F /* ChartViewControllerUI.swift */; };
@@ -54,12 +57,12 @@
 		0E5169D02756A0F90086CECF /* criptoviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = criptoviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5169DA2756A0F90086CECF /* criptoviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = criptoviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1943F875AAD695B51959099E /* TickerReturnDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerReturnDto.swift; sourceTree = "<group>"; };
+		4C426E202758FB190042F544 /* Sparkline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparkline.swift; sourceTree = "<group>"; };
 		4CB1557B2757F091006A4D0F /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		4CB1557D2757F3A3006A4D0F /* ChartViewControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewControllerUI.swift; sourceTree = "<group>"; };
 		5A597DEA99A5D57BAC62326E /* NomicsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomicsAPI.swift; sourceTree = "<group>"; };
 		8105AB2081B861EFB85CD282 /* CriptoviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoviewTests.swift; sourceTree = "<group>"; };
 		A5E8137E8175CFBBA4DA6E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A77F459F1BDCD28CE61944C3 /* Sparkline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparkline.swift; sourceTree = "<group>"; };
 		B003DEF1749C6637F9A5139C /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
 		B4C8A05041530E1B9D9DCA1F /* SparklineReturnDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparklineReturnDto.swift; sourceTree = "<group>"; };
 		BB13AA22EDAB21370CAF0879 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
@@ -125,7 +128,6 @@
 		0E1EC8722756A17B00D0AF28 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				4CB1557F2757F66A006A4D0F /* Models */,
 				00B877882757B54300F91872 /* View */,
 				00B877872757B4F300F91872 /* Controller */,
 				1CDE18E492CCF81D16AF0128 /* Delegates */,
@@ -192,13 +194,6 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
-		4CB1557F2757F66A006A4D0F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		5122EAEED57099A86DE9F481 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +210,7 @@
 				ECD3BCDD1BC36EFF614124A6 /* CriptoCoin.swift */,
 				5A597DEA99A5D57BAC62326E /* NomicsAPI.swift */,
 				BB13AA22EDAB21370CAF0879 /* Ticker.swift */,
-				A77F459F1BDCD28CE61944C3 /* Sparkline.swift */,
+				4C426E202758FB190042F544 /* Sparkline.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -378,12 +373,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C426E222758FBFA0042F544 /* AppDelegate.swift in Sources */,
 				0E5169C22756A0F80086CECF /* ViewController.swift in Sources */,
 				00B8778D2757B92B00F91872 /* CriptoCoinCollectionViewCell.swift in Sources */,
 				00B8778A2757B57100F91872 /* ViewControllerUI.swift in Sources */,
 				4CB1557C2757F091006A4D0F /* ChartViewController.swift in Sources */,
 				4CB1557E2757F3A3006A4D0F /* ChartViewControllerUI.swift in Sources */,
 				F1C2818155808C47A80475DD /* SparklineReturnDto.swift in Sources */,
+				4C426E212758FB190042F544 /* Sparkline.swift in Sources */,
+				4C426E232758FBFE0042F544 /* SceneDelegate.swift in Sources */,
 				6C5E16893A9C85FBB54794B0 /* TickerReturnDto.swift in Sources */,
 				BCA8F4FDBBB8FECF5EACED2C /* Ticker.swift in Sources */,
 				0BF8030702C24BEDD360442B /* CriptoCoin.swift in Sources */,
