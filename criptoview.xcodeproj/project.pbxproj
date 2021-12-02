@@ -14,6 +14,9 @@
 		0E5169C22756A0F80086CECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5169C12756A0F80086CECF /* ViewController.swift */; };
 		0E5169C72756A0F90086CECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5169C62756A0F90086CECF /* Assets.xcassets */; };
 		0E5169CA2756A0F90086CECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5169C82756A0F90086CECF /* LaunchScreen.storyboard */; };
+		0E9EF997275941AC00E8A5A8 /* RealCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9EF996275941AC00E8A5A8 /* RealCoin.swift */; };
+		0E9EF9992759438B00E8A5A8 /* CriptoCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9EF9982759438B00E8A5A8 /* CriptoCoinTests.swift */; };
+		0E9EF99B2759446E00E8A5A8 /* RealCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9EF99A2759446E00E8A5A8 /* RealCoinTests.swift */; };
 		4C426E212758FB190042F544 /* Sparkline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C426E202758FB190042F544 /* Sparkline.swift */; };
 		4C426E222758FBFA0042F544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8137E8175CFBBA4DA6E20 /* AppDelegate.swift */; };
 		4C426E232758FBFE0042F544 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B2ADF830B5EDEB79DB3354 /* SceneDelegate.swift */; };
@@ -58,6 +61,9 @@
 		0E5169CB2756A0F90086CECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E5169D02756A0F90086CECF /* criptoviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = criptoviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5169DA2756A0F90086CECF /* criptoviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = criptoviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E9EF996275941AC00E8A5A8 /* RealCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealCoin.swift; sourceTree = "<group>"; };
+		0E9EF9982759438B00E8A5A8 /* CriptoCoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCoinTests.swift; sourceTree = "<group>"; };
+		0E9EF99A2759446E00E8A5A8 /* RealCoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealCoinTests.swift; sourceTree = "<group>"; };
 		1943F875AAD695B51959099E /* TickerReturnDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerReturnDto.swift; sourceTree = "<group>"; };
 		4C426E202758FB190042F544 /* Sparkline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparkline.swift; sourceTree = "<group>"; };
 		4CB1557B2757F091006A4D0F /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +181,8 @@
 			children = (
 				8105AB2081B861EFB85CD282 /* CriptoviewTests.swift */,
 				B003DEF1749C6637F9A5139C /* ApiTests.swift */,
+				0E9EF9982759438B00E8A5A8 /* CriptoCoinTests.swift */,
+				0E9EF99A2759446E00E8A5A8 /* RealCoinTests.swift */,
 			);
 			path = criptoviewTests;
 			sourceTree = "<group>";
@@ -212,6 +220,7 @@
 				5122EAEED57099A86DE9F481 /* DTO */,
 				ECD3BCDD1BC36EFF614124A6 /* CriptoCoin.swift */,
 				5A597DEA99A5D57BAC62326E /* NomicsAPI.swift */,
+				0E9EF996275941AC00E8A5A8 /* RealCoin.swift */,
 				BB13AA22EDAB21370CAF0879 /* Ticker.swift */,
 				4C426E202758FB190042F544 /* Sparkline.swift */,
 			);
@@ -378,6 +387,7 @@
 			files = (
 				4C426E222758FBFA0042F544 /* AppDelegate.swift in Sources */,
 				0E5169C22756A0F80086CECF /* ViewController.swift in Sources */,
+				0E9EF997275941AC00E8A5A8 /* RealCoin.swift in Sources */,
 				00B8778D2757B92B00F91872 /* CriptoCoinCollectionViewCell.swift in Sources */,
 				00B8778A2757B57100F91872 /* ViewControllerUI.swift in Sources */,
 				4CB1557C2757F091006A4D0F /* ChartViewController.swift in Sources */,
@@ -397,8 +407,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E018A4A2759057700CE9414 /* Environment.swift in Sources */,
+				0E9EF9992759438B00E8A5A8 /* CriptoCoinTests.swift in Sources */,
 				A35E27A0202E2CB56E8D1198 /* ApiTests.swift in Sources */,
 				764254055328F4785B24F06B /* CriptoviewTests.swift in Sources */,
+				0E9EF99B2759446E00E8A5A8 /* RealCoinTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

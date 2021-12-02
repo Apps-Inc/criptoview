@@ -18,7 +18,7 @@ class ChartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        sparkline = NomicsAPI.api.sparkline(for: CriptoCoin.withLabel(ticker.id)!)
+        sparkline = NomicsAPI.api.sparkline(for: CriptoCoin.withLabel(ticker.id)!, convert: .BRL)
         buildScreen()
     }
 

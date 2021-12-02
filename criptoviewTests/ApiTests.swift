@@ -19,25 +19,25 @@ class ApiTests: XCTestCase {
     // MARK: GET /sparkline
 
     func testApiSparklineForASingleCoin() {
-        XCTAssertNotNil(api.sparkline(for: .BTC))
+        XCTAssertNotNil(api.sparkline(for: .BTC, convert: .BRL))
     }
 
     func testApiSparklineForMultipleCoins() {
-        XCTAssertNotNil(api.sparkline(for: [.BTC]))
-        XCTAssertNotNil(api.sparkline(for: [.BTC, .ETH]))
+        XCTAssertNotNil(api.sparkline(for: [.BTC], convert: .BRL))
+        XCTAssertNotNil(api.sparkline(for: [.BTC, .ETH], convert: .BRL))
     }
 
     func testApiSparklineForAllKnownCoins() {
-        XCTAssertNotNil(api.sparklineAll())
+        XCTAssertNotNil(api.sparklineAll(convert: .BRL))
     }
 
     // MARK: GET /ticker
 
     func testApiTickerForASingleCoin() {
-        XCTAssertNotNil(api.ticker(for: [.DOGE, .XMR]))
+        XCTAssertNotNil(api.ticker(for: [.DOGE, .XMR], convert: .BRL))
     }
 
     func testApiTickerForAllCoins() {
-        XCTAssertNotNil(api.tickerAll())
+        XCTAssertNotNil(api.tickerAll(convert: .BRL))
     }
 }
