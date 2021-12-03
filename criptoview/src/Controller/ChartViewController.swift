@@ -15,6 +15,10 @@ class ChartViewController: UIViewController {
     var lineChart = LineChartView()
     var sparkline: Sparkline?
 
+    var labelBrl: UILabel!
+    var labelUsd: UILabel!
+    var labelEur: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
