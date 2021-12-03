@@ -23,7 +23,6 @@ class ApiTests: XCTestCase {
     }
 
     func testApiSparklineForMultipleCoins() {
-        XCTAssertNotNil(api.sparkline(for: [.BTC], convert: .BRL))
         XCTAssertNotNil(api.sparkline(for: [.BTC, .ETH], convert: .BRL))
     }
 
