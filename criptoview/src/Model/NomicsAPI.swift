@@ -55,19 +55,26 @@ struct NomicsAPI {
 
 extension NomicsAPI {
     private func sparklineEndpoint(coins: [CriptoCoin], convert toStandardCoin: RealCoin) -> String {
+
+        let startDate = (Calendar.current.date(byAdding: .day, value: -30, to: Date()) ?? Date())
+            .ISO8601Format().replacingOccurrences(of: ":", with: "%%3A")
+        let endDate = Date().advanced(by: TimeInterval())
+            .ISO8601Format().replacingOccurrences(of: ":", with: "%%3A")
+
         let sparklineEndpointTemplate = "sparkline?" +
             "key=%@&" +
             "ids=%@&" +
-            "start=2021-10-30T00%%3A00%%3A00Z&" +
-            "end=2021-11-03T00%%3A00%%3A00Z&" +
+            "start=\(startDate)&" +
+            "end=\(endDate)&" +
             "convert=%@&"
 
-        return baseUrl + String(
+        let url = baseUrl + String(
             format: sparklineEndpointTemplate,
             self.key,
             coins.map(\.symbol).joined(separator: ","),
             toStandardCoin.symbol
         )
+        return url
     }
 
     func sparkline(for coin: CriptoCoin, convert toStandardCoin: RealCoin) -> Sparkline? {

@@ -16,8 +16,14 @@ extension ViewController {
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 30
         layout.minimumInteritemSpacing = 1
-        let cellSize = view.frame.size.width/3
-        layout.itemSize = CGSize(width: cellSize, height: cellSize)
+
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            let cellSize = view.frame.size.width/4
+            layout.itemSize = CGSize(width: cellSize, height: cellSize)
+        } else {
+            let cellSize = view.frame.size.width/3
+            layout.itemSize = CGSize(width: cellSize, height: cellSize)
+        }
 
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(
